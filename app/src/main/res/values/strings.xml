@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChortGuitar</string>
+
+    <string name="job_success">Job Success</string>
+    <string name="ui_ux_designer">UI/UX Designer</string>
+    <string name="my_desc">Saya seorang pengembang android native, dan web developer mengunakan codeigniter 3 dan 4. saya biasa mengembangkan aplikasi mengunakan MVVM sebagai alat proses data dan beberapa library tambahan yang digunakan sebagai alat bantu</string>
+    <string name="about_me">About Me</string>
+    <string name="contact">Contact</string>
+    <string name="skills">Skills</string>
+    <string name="ratings">Star Ratings</string>
+    <string name="samplereview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium bibendum sapien, ut euismod massa. Duis convallis sem sed turpis elementum auctor.</string>
+
+</resources>

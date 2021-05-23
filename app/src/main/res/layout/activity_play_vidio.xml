@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:layout_gravity="center_horizontal"
+    tools:context=".ui.home.PlayVidioActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp">
+    <VideoView
+        android:layout_gravity="center"
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/tv_judul"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_margin="@dimen/padding_8"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/aclonica"-->
+<!--        android:text="Judul filem"-->
+<!--        android:textSize="25dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="@dimen/padding_8"-->
+<!--        android:layout_weight="1.96">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_info"-->
+<!--            android:textStyle="italic"-->
+<!--            android:text="@string/my_desc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </ScrollView>-->
+
+</LinearLayout>

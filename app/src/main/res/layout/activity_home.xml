@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/teabackground" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".8"
+        android:background="@color/blue_black_dark" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:padding="8dp"
+            app:cardBackgroundColor="@color/blue_black_light">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/aclonica"
+                android:hint="Welcome User"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/guitar" />
+        </androidx.cardview.widget.CardView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_8">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/m_list_lagu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/list_lagu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/aclonica"
+                            android:text="HIBURAN"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView4"
+                    app:layout_constraintStart_toEndOf="@+id/cardView2"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/m_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/profile" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/aclonica"
+                            android:text="PROFILE"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="32dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="20dp">
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="120dp"-->
+<!--                        android:orientation="vertical"-->
+<!--                        tools:ignore="MissingConstraints">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:src="@drawable/teman" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="20dp"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:fontFamily="@font/aclonica"-->
+<!--                            android:text="TEMAN"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="15dp" />-->
+<!--                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView2"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/m_wallpaper"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/wallpaper" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/aclonica"
+                            android:text="WALLPAPER"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView3"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/m_vidio"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_music" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/aclonica"
+                            android:text="VIDIO"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView4"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                    tools:ignore="MissingConstraints">
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="100dp"-->
+                    <!--                        android:layout_height="120dp"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        tools:ignore="MissingConstraints">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="100dp"-->
+                    <!--                            android:src="@drawable/teman" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="20dp"-->
+                    <!--                            android:layout_gravity="center_horizontal"-->
+                    <!--                            android:fontFamily="@font/aclonica"-->
+                    <!--                            android:text="TEMAN"-->
+                    <!--                            android:textColor="@color/white"-->
+                    <!--                            android:textSize="15dp" />-->
+                    <!--                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView9"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                    tools:ignore="MissingConstraints">
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="100dp"-->
+                    <!--                        android:layout_height="120dp"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        tools:ignore="MissingConstraints">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="100dp"-->
+                    <!--                            android:src="@drawable/teman" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="20dp"-->
+                    <!--                            android:layout_gravity="center_horizontal"-->
+                    <!--                            android:fontFamily="@font/aclonica"-->
+                    <!--                            android:text="TEMAN"-->
+                    <!--                            android:textColor="@color/white"-->
+                    <!--                            android:textSize="15dp" />-->
+                    <!--                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView8"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView6"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView6"
+                    tools:ignore="MissingConstraints">
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="100dp"-->
+                    <!--                        android:layout_height="120dp"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        tools:ignore="MissingConstraints">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="100dp"-->
+                    <!--                            android:src="@drawable/teman" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="20dp"-->
+                    <!--                            android:layout_gravity="center_horizontal"-->
+                    <!--                            android:fontFamily="@font/aclonica"-->
+                    <!--                            android:text="TEMAN"-->
+                    <!--                            android:textColor="@color/white"-->
+                    <!--                            android:textSize="15dp" />-->
+                    <!--                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView10"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView7"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView7"
+                    tools:ignore="MissingConstraints">
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="100dp"-->
+                    <!--                        android:layout_height="120dp"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        tools:ignore="MissingConstraints">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="100dp"-->
+                    <!--                            android:src="@drawable/teman" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="20dp"-->
+                    <!--                            android:layout_gravity="center_horizontal"-->
+                    <!--                            android:fontFamily="@font/aclonica"-->
+                    <!--                            android:text="TEMAN"-->
+                    <!--                            android:textColor="@color/white"-->
+                    <!--                            android:textSize="15dp" />-->
+                    <!--                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

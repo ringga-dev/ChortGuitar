@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ringga.chortguitar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChortGuitar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.home.ListVidioActivity"></activity>
+        <activity android:name=".ui.home.PlayVidioActivity" />
+        <activity android:name=".ui.home.CameraActivity" />
+        <activity android:name=".ui.home.ThemeActivity" />
+        <activity android:name=".ui.home.WallpaperActivity" />
+        <activity android:name=".ui.home.LaguActivity" />
+        <activity android:name=".ui.home.ListLaguActivity" />
+        <activity android:name=".ui.home.ProfileActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.auth.RegisteActivity" />
+        <activity android:name=".ui.auth.LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
